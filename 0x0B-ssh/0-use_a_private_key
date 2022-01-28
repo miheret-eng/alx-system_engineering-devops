@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Connects to my Holberton server.
+
+ssh -i ~/.ssh/holberton ubuntu@3.236.24.174
