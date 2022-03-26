@@ -6,7 +6,7 @@ import sys
 
 
 def make_csv(users=None, todos=None):
-    """Turns payloads into CSV format"""    
+    """Turns payloads into CSV format"""
     titles = ["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"]
 
     with open(sys.argv[1] + ".csv", "w") as f:
@@ -30,7 +30,7 @@ if __name__ == "__main__":
         todos_arr = []
         for i in todos:
             if i.get("completed"):
-                todos_arr.append(i)                
+                todos_arr.append(i)
                 todos_len += 1
 
         make_csv(users, todos)
