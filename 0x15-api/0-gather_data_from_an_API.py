@@ -18,8 +18,8 @@ if __name__ == "__main__":
                 todos_arr.append(i)
                 todos_len += 1
 
-        print("Employee {} is done with tasks({}/{}):".format(            
+        print("Employee {} is done with tasks({}/{}):".format(
               users[0].get("name"), todos_len, len(todos)))
-        
+
         for i in todos_arr:
             print("\t {}".format(i.get("title")))
